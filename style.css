@@ -6,12 +6,13 @@ body {
     align-items: center;
 }
 .ship {
-    width: 75%;
-    height: auto;
+    height: 75%;
+    width: auto;
     animation: animate-ship 1s linear infinite;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    margin-bottom: auto;
     display: block;
 }
 
