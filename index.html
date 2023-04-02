@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <img src="./ship.png" class="ship"></img>
+        <svg>
+            <filter id="noise">
+                <feTurbulence type="turbulence" baseFrequency=".001" id="turbulence" numOctaves="5"></feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="100"></feDisplacementMap> -->
+            </filter>
+        </svg>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    filter: url("#noise");
+    -webkit-filter: url('#noise');
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.ship {
+    width: 75%;
+    height: auto;
+    animation: animate-ship 1s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;
+}
+
+@keyframes animate-ship {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(1%);
+    }
+    90% {
+        transform: translateX(0%);
+    }
+}
