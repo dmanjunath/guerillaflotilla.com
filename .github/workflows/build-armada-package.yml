@@ -1,0 +1,17 @@
+name: 'Publish to Armada'
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build dist/
+      run: sh build.sh
+    - uses: armada-network/armada-release-action@v1
+      with:
+        build_dir: dist
+        bundle_name: gf-${{ github.sha }}
+        github_token: ${{ secrets.TOKEN }}
