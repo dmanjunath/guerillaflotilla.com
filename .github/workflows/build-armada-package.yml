@@ -8,6 +8,9 @@ jobs:
   check-links:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
+    - run: ls
+    - run: pwd
     - name: Build dist/
       run: sh build.sh
     - uses: armada-network/armada-release-action@v1
