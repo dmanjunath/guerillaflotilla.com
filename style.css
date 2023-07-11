@@ -1,4 +1,4 @@
-body {
+.ship-container {
     filter: url("#noise");
     -webkit-filter: url('#noise');
     width: 100vw;
